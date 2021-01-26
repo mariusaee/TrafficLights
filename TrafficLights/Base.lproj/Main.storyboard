@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" constant="176" id="cMS-kn-PQb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -58,6 +58,11 @@
                             <constraint firstItem="PnI-7J-Q4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4n-1a-BJE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="rRI-gI-Tvp" id="0ad-M4-EXm"/>
+                        <outlet property="redView" destination="9iN-pa-Xku" id="iAD-UM-tZ3"/>
+                        <outlet property="yellowView" destination="yTg-QI-Xno" id="97I-MC-hZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
