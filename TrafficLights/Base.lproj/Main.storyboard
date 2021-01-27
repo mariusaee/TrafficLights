@@ -27,29 +27,42 @@
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOL-c8-uKk"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rKu-Zx-sde">
-                                <rect key="frame" x="147" y="258" width="120" height="380"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9iN-pa-Xku" userLabel="RedView">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTg-QI-Xno" userLabel="YellowView">
-                                        <rect key="frame" x="0.0" y="130" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-gI-Tvp" userLabel="GreenView">
-                                        <rect key="frame" x="0.0" y="260" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </view>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9iN-pa-Xku" userLabel="RedView">
+                                <rect key="frame" x="157" y="64" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="nMm-mO-FpV"/>
+                                    <constraint firstAttribute="width" constant="100" id="w92-Y7-f8Z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTg-QI-Xno" userLabel="YellowView">
+                                <rect key="frame" x="157" y="192" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Dal-JF-KVM"/>
+                                    <constraint firstAttribute="width" constant="100" id="gEy-Ys-FIQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-gI-Tvp" userLabel="GreenView">
+                                <rect key="frame" x="157" y="320" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IO0-23-Pt3"/>
+                                    <constraint firstAttribute="width" constant="100" id="pAn-ac-bPZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PnI-7J-Q4d" secondAttribute="bottom" constant="50" id="6E9-de-IyB"/>
-                            <constraint firstItem="PnI-7J-Q4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qUD-o2-Gsz"/>
+                            <constraint firstItem="rRI-gI-Tvp" firstAttribute="top" secondItem="yTg-QI-Xno" secondAttribute="bottom" constant="28" id="DDc-4A-9jH"/>
+                            <constraint firstItem="9iN-pa-Xku" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EUN-aX-Lxw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PnI-7J-Q4d" secondAttribute="bottom" constant="50" id="OLx-za-sKC"/>
+                            <constraint firstItem="rRI-gI-Tvp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UaH-cH-UbK"/>
+                            <constraint firstItem="yTg-QI-Xno" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W92-yy-Az8"/>
+                            <constraint firstItem="9iN-pa-Xku" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YHR-vU-cpJ"/>
+                            <constraint firstItem="PnI-7J-Q4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="apL-Jy-1ug"/>
+                            <constraint firstItem="yTg-QI-Xno" firstAttribute="top" secondItem="9iN-pa-Xku" secondAttribute="bottom" constant="28" id="lqe-WR-Ruz"/>
                         </constraints>
                     </view>
                     <connections>
