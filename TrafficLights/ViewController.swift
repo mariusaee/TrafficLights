@@ -17,12 +17,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        redView.isHidden = false
         redView.alpha = 0.3
-    }
-
-    @IBAction func startButtonPressed() {
+        yellowView.alpha = 0.3
+        greenView.alpha = 0.3
+        
+        redView.layer.cornerRadius = 50
+        yellowView.layer.cornerRadius = 50
+        greenView.layer.cornerRadius = 50
+        
+        startButton.layer.cornerRadius = 10
     }
     
+    @IBAction func startButtonPressed() {
+        if startButton.tag == 0 {
+            redView.alpha = 1
+            yellowView.alpha = 0.3
+            greenView.alpha = 0.3
+            startButton.tag += 1
+            startButton.setTitle("Next", for: .normal)
+        } else if startButton.tag == 1 {
+            redView.alpha = 0.3
+            yellowView.alpha = 1
+            greenView.alpha = 0.3
+            startButton.tag += 1
+        } else if startButton.tag == 2 {
+            redView.alpha = 0.3
+            yellowView.alpha = 0.3
+            greenView.alpha = 1
+            startButton.tag = 0
+        }
+    }
 }
 
